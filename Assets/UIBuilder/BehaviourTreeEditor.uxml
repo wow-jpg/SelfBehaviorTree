@@ -1,0 +1,16 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/UIBuilder/BehaviourTreeEditor.uss?fileID=7433441132597879392&amp;guid=d966351098434694cadb6a57fec01444&amp;type=3#BehaviourTreeEditor" />
+    <uie:Toolbar>
+        <uie:ToolbarMenu display-tooltip-when-elided="true" text="Assets" />
+    </uie:Toolbar>
+    <SplitView focusable="false" tabindex="0" style="height: 604px; opacity: 1; width: 800px;">
+        <ui:VisualElement style="height: auto; width: auto; flex-direction: column; flex-grow: 0; align-items: stretch;">
+            <ui:Label text="Inspector" display-tooltip-when-elided="true" style="-unity-text-outline-color: rgb(32, 32, 32); background-color: rgb(32, 32, 32);" />
+            <InspectorView name="InspectorView" style="height: -54px; width: -574px;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-shrink: 0; flex-grow: 1; height: 800px; width: auto; align-items: stretch; left: 300px; top: 0;">
+            <ui:Label text="Tree View" display-tooltip-when-elided="true" style="background-color: rgb(32, 32, 32);" />
+            <BehaviourTreeView focusable="true" style="height: 800px;" />
+        </ui:VisualElement>
+    </SplitView>
+</ui:UXML>
